@@ -91,14 +91,17 @@
             text-decoration: none;
             margin: auto;
             font-family: 'Spartan', 'Helvetica Neue', 'Arial', sans-serif;
+            line-height: normal;
+            font-size: 14px;
+            font-weight: 600;
+
         }
 
         #top-sec h1 {
             text-align: center;
-            font-size: 3rem;
-            font-family: 'Spartan', 'Helvetica Neue', 'Arial', sans-serif;
             margin-bottom: 55px;
-
+            font-family: " Helvetica Neue";
+            font-size: 42px
         }
 
         #top-sec2 {
@@ -120,6 +123,10 @@
             justify-content: center;
             text-decoration: none;
             margin: auto;
+            font-weight: 600;
+            font-family: 'Spartan', 'Helvetica Neue', 'Arial', sans-serif;
+
+
         }
 
         #discover {
@@ -315,21 +322,7 @@
             text-decoration: underline;
         }
 
-        #card {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        #boxes {
-            display: flex;
-            grid-template-columns: repeat(2, 2fr);
-            gap: 10px;
-        }
-
-        #boxes img {
-            width: 20%;
-
-        }
+        
 
         #flowers {
             margin: auto;
@@ -354,7 +347,8 @@
         #inspired {
             width: 84%;
             margin: auto;
-            column-gap: 10px;
+            margin-right: 6%;
+            ;
         }
 
         #inspired>div {
@@ -366,11 +360,13 @@
 
         #inspired>div>div>p {
             text-align: center;
-            font-size: 10px;
+            font-family: 'Spartan', 'Helvetica Neue', 'Arial', sans-serif !important;
+            font-size: .9rem !important;
+            color: #000
         }
 
         #inspired img {
-            width: 70%;
+            width: 86%;
             align-items: center;
             column-gap: 20px;
         }
@@ -382,6 +378,84 @@
             font-size: 2.3rem;
             font-family: 'Spartan', 'Helvetica Neue', 'Arial', sans-serif;
             font-weight: 30%;
+        }
+
+        #perfectparcel {
+            width: 80;
+            margin: auto;
+        }
+
+        #card {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            margin: auto;
+            border: 0px solid blue;
+            margin-top: 40px;
+            gap: 20px;
+            width: 80%;
+        }
+
+        #card>div {
+            border: 0px solid red;
+        }
+
+        #card>div>img {
+            width: 100%;
+        }
+
+        #card>div>div {
+            border: 0px solid black;
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            justify-content: space-around;
+        }
+
+        #card>div>div>div {
+            width: 6%;
+
+        }
+
+        /* #perfectparcel img {
+            width: 75%;
+            border: 2px solid red;
+        } */
+
+        #perfectparcel {
+            text-align: center;
+            margin-top: 50px;
+
+        }
+
+        #perfectparcel>h1 {
+            color: #62b33c;
+            margin-bottom: 10px;
+            font-size: 50px;
+            font-weight: 700;
+            font-family: 'Spartan', 'Helvetica Neue', 'Arial', sans-serif;
+        }
+
+        #perfectparcel>h2 {
+            font-size: 50px;
+            font-weight: 700;
+            font-family: 'Spartan', 'Helvetica Neue', 'Arial', sans-serif;
+            Font-size: 42px;
+            color: rgb(53, 53, 53);
+            Font-weight: 700;
+
+        }
+
+        #card p {
+            font-size: 16px;
+            color: rgb(133, 133, 142);
+            margin-bottom: 40px;
+            display: flex;
+            font-weight: 400;
+            border-bottom: 1px solid rgb(174, 166, 166);
+
+
+
         }
     </style>
 </head>
@@ -646,32 +720,7 @@
         </div>
     </div>
 
-    <div id="floralsupplies">
-        <div id="card">
-            <img src="https://www.dollartree.com/file/general/w_curated1__floral_20221226.jpg" alt="">
-        </div>
-
-        <div id="boxes">
-            <div><img src="https://www.dollartree.com/file/general/w_curated1_vases_containers_20221226.jpg" alt="">
-                <p>Vases & Containers</p>
-            </div>
-
-            <div><img src="https://www.dollartree.com/file/general/w_curated1_vases_containers_20221226.jpg" alt="">
-                <p>Vases & Containers</p>
-            </div>
-
-            <div><img src="https://www.dollartree.com/file/general/w_curated1_vases_containers_20221226.jpg" alt="">
-                <p>Vases & Containers</p>
-            </div>
-
-            <div><img src="https://www.dollartree.com/file/general/w_curated1_vases_containers_20221226.jpg" alt="">
-                <p>Vases & Containers</p>
-            </div>
-
-
-        </div>
-    </div>
-
+   
 
     <div id="flowers">
         <div>
@@ -704,6 +753,111 @@
         </div>
     </div>
 
+    <div id="perfectparcel">
+        <h1>#PerfectParcel</h1>
+        <h2>Share Your Finds And Creations</h2>
+        <div id="card">
+
+            <div>
+                <img src="https://cdn.wyng.com/54ac3103ef95a67c1cff8ef2/63c0806f0a197c00a48fa594.JPEG" alt="">
+
+                <div>
+                    <div>
+                        <img src="https://dnsl4xr6unrmf.cloudfront.net/images/shared/social/small-instagram-icon.svg"
+                            alt="">
+                    </div>
+                    <p>Perfect Parcel Valentine Finds $3-$..</p>
+                </div>
+
+            </div>
+
+            <div>
+                <img src="https://cdn.wyng.com/54ac3103ef95a67c1cff8ef2/63c07cf31eaf8f0323b4c2d6.JPEG" alt="">
+
+                <div>
+                    <div>
+                        <img src="https://dnsl4xr6unrmf.cloudfront.net/images/shared/social/small-instagram-icon.svg"
+                            alt="">
+                    </div>
+                    <p>Spring Fling 🌺🌸🌻🌼🌷🌹 So..</p>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://cdn.wyng.com/54ac3103ef95a67c1cff8ef2/63c07cf1e5940c00a5ebbdc9.JPEG" alt="">
+
+                <div>
+                    <div>
+                        <img src="https://dnsl4xr6unrmf.cloudfront.net/images/shared/social/small-instagram-icon.svg"
+                            alt="">
+                    </div>
+                    <p>Valentine gnomes perfectparcel #bu..</p>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://cdn.wyng.com/54ac3103ef95a67c1cff8ef2/63c0681cbf2838024cbe3cd2.JPEG" alt="">
+
+                <div>
+                    <div>
+                        <img src="https://dnsl4xr6unrmf.cloudfront.net/images/shared/social/small-instagram-icon.svg"
+                            alt="">
+                    </div>
+                    <p>Bee 🐝 and Farmhouse collection 20..</p>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://cdn.wyng.com/54ac3103ef95a67c1cff8ef2/63c0681d0d4c0b0085334e1b.JPEG" alt="">
+
+                <div>
+                    <div>
+                        <img src="https://dnsl4xr6unrmf.cloudfront.net/images/shared/social/small-instagram-icon.svg"
+                            alt="">
+                    </div>
+                    <p>Bee 🐝 and Farmhouse collection 20..</p>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://cdn.wyng.com/54ac3103ef95a67c1cff8ef2/63c05d4f9c9903023d2134fe.JPEG" alt="">
+
+                <div>
+                    <div>
+                        <img src="https://dnsl4xr6unrmf.cloudfront.net/images/shared/social/small-instagram-icon.svg"
+                            alt="">
+                    </div>
+                    <p>Cricut PEEPS! perfectparcel has great..</p>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://cdn.wyng.com/54ac3103ef95a67c1cff8ef2/63c044b6368c30007464a6ba.JPEG" alt="">
+
+                <div>
+                    <div>
+                        <img src="https://dnsl4xr6unrmf.cloudfront.net/images/shared/social/small-instagram-icon.svg"
+                            alt="">
+                    </div>
+                    <p>Bee 🐝 and Farmhouse collection 20..</p>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://cdn.wyng.com/54ac3103ef95a67c1cff8ef2/63c036a2bf2838021c5c9691.JPEG" alt="">
+
+                <div>
+                    <div>
+                        <img src="https://dnsl4xr6unrmf.cloudfront.net/images/shared/social/small-instagram-icon.svg"
+                            alt="">
+                    </div>
+                    <p> 🐝🐝 Bee 🐝 and Farmhouse collec..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div></div>
 </body>
 
 </html>
