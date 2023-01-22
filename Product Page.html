@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0%;
+        }
+
+        #nav1 {
+            width: 100%;
+            height: 70px;
+            /* border: 1px solid blue; */
+            font-size: 12px;
+            background-color: #12823b;
+            font-weight: 400;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .underline {
+            border-bottom: 2px solid white;
+        }
+
+        #nav1 div {
+            margin: auto;
+        }
+
+
+        .nav2 {
+            /* border: 1px solid red; */
+            height: 90px;
+            padding: 0px 100px;
+            display: flex;
+            color: #12823b;
+        }
+
+        .nav2 input[type=text] {
+            float: right;
+            padding-right: 24%;
+            margin: 30px 0px 20px 125px;
+            text-align: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+        }
+
+        .nav2 a {
+            margin: 10px 80px;
+            margin: auto;
+        }
+
+
+        .menu {
+            width: 79%;
+            margin: auto;
+            height: 55px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            border-bottom: 1px solid rgb(174, 166, 166);
+        }
+
+        #product-container {
+            /* border: 1px solid red; */
+
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row: auto;
+            row-gap: 40px;
+            column-gap: 40px;
+            justify-content: space-evenly;
+
+        }
+
+        #product-container>div {
+            border: 2px solid green;
+
+            /* border: 2px solid red; */
+            /* display: flex;
+            width: 70%;
+            height: 600px; */
+            text-align: center;
+            margin-top: 70px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+        }
+
+        #product-container h3 {
+            margin-top: 20px;
+        }
+
+        #product-container>div>img {
+            width: 35%;
+            /* height: 300px; */
+
+        }
+
+        #product-container>div>img:first-of-type {
+            width: 49%;
+        }
+
+        #product-container button {
+            /* margin-bottom: 60px; */
+            /* display: block; */
+            padding: 7px 10px 7px 10px;
+            margin-top: 15px;
+            color: white;
+            background-color: #12823b;
+            border: none;
+            border-radius: 8%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        #product-container button:hover {
+            background-color: gainsboro;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        #logo {
+            display: grid;
+            /* border: 1px solid red; */
+            align-items: center;
+            row-gap: 0px;
+            padding: 20px;
+        }
+
+        #left {
+            display: flex;
+            gap: 10px;
+        }
+
+        #shop {
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav1">
+        <!-- first nav bar -->
+        <div><img src="https://www.dollartree.com/file/general/icon-stores.png" alt="err"></div>
+
+        <div> Store: <span class="underline"> Sams Shopping Centre</span></div>
+
+        <div> <img src="https://www.dollartree.com/file/general/DT-icon-catalog-quick-order-white.svg" alt="error">
+            Catalog Quick </div>
+
+        <div> <img src="https://www.dollartree.com/file/general/DT-icon-phone-white.svg" alt="error"></div>
+
+
+        <div> Order By Phone 1-877-530-TREE <br> <span class="underline">(Call Centre Hours).</span></div>
+
+        <div><img src="https://www.dollartree.com/file/general/white_same_day_delivery_icon.svg" alt="error"></div>
+        <div>Same day Delivery</div>
+
+        <div> <img src="https://www.dollartree.com/file/general/DT-icon-track-orders-white.svg" alt="">
+            Track Orders</div>
+
+        <div>
+            <img src="https://www.dollartree.com/ccstore/v1/images/?source=/file/general/shop_family_dollar.png&height=30&width=193"
+                alt="">
+        </div>
+    </div>
+
+
+    <div class="nav2">
+        <a> <img src="file:///D:/CW%202023/Perfect%20Parcel%202.png" alt="error" height="60px" width="135vh"> </a>
+
+
+        <input type="text" placeholder="Search PerfectParcel.com">
+
+        <div id="shop">
+            <a href="shop">Shop</a>
+
+            <a><img src="https://www.dollartree.com/file/general/dt_plus_pdp_plp_200x70.png" alt="error"
+                    height="28px"></a>
+        </div>
+        <div id="left">
+            <div id="logo">
+                <a><img src="https://www.dollartree.com/file/general/DT-icon-account-green.svg" alt=""></a>
+                <span>Account</span>
+            </div>
+
+            <div id="logo">
+                <a><img src="https://www.dollartree.com/file/general/DT-icon-cart-green.svg" alt=""></a>
+                <span>Cart</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+
+        <p>All Departments</p>
+        <p>Holidays, Seasons & Celebrations</p>
+        <p>Toys And Crafts</p>
+        <p>Kitchen & Home Decor</p>
+        <p>Home & Office</p>
+        <p>Health & Personal Care</p>
+        <p>Food, Candy & Drinks</p>
+    </div>
+
+    <select id="filter">
+        <option value="">Filter By Category</option>
+        <option value="Laptop">Brand</option>
+        <option value="Mobile">Category</option>
+        <option value="Speakers">Discount Percentage</option>
+        <option value="Speakers">Price</option>
+        <option value="Speakers">Rating</option>
+
+
+    </select>
+
+    <div id="product-container"></div>
+
+</body>
+
+<script>
+
+
+    async function FetchData() {
+        try {
+            let res = await fetch("https://dummyjson.com/products/search?q=phone")
+            res = await res.json()
+            // console.log(res.products)
+            DisplayProduct(res.products)
+            // DisplayProduct(res.data)
+        } catch (err) {
+            console.log(err)
+        }
+    }
+    FetchData()
+
+    let filterBy = document.getElementById("filter")
+    filterBy.addEventListener("change", () => {
+        FetchData()
+    })
+    function FilterData(data) {
+        let filterValue = filterBy.value
+        if (filterValue === "") {
+            DisplayProduct(data)
+        } else {
+            data = data.filter((products) => {
+                return product.category == filterValue
+            })
+            DisplayProduct(data)
+        }
+
+    }
+    let Container = document.getElementById("product-container")
+    function DisplayProduct(data) {
+        console.log(data)
+        Container.innerHTML = ""
+        data.forEach(function (product) {
+            let card = document.createElement("div")
+            let img = document.createElement("img")
+
+            let brand = document.createElement("h3")
+            let category = document.createElement("p")
+            let description = document.createElement("p")
+            let discountper = document.createElement("p")
+            let price = document.createElement("h3")
+            let rating = document.createElement("p")
+            // let thumb = document.createElement("img")
+            let title = document.createElement("h3")
+            let add_to_cart = document.createElement("button")
+            add_to_cart.textContent = "Add to Cart"
+
+            brand.textContent = product.brand;
+            category.textContent = product.category;
+            description.textContent = product.description;
+            discountper.textContent = `${product.discountPercentage}%`;
+            img.src = product.images[0];
+            price.textContent = `₹${product.price}`;
+            rating.textContent = product.rating;
+            // thumb.src = product.thumbnail;
+            title.textContent = product.title;
+            // add_to_cart.textCon2tent = "Add to Cart"
+
+            card.append(brand, category, discountper, img, price, rating, title, add_to_cart)
+            Container.append(card)
+
+        });
+    }
+</script>
+
+</html>
