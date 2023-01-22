@@ -15,7 +15,7 @@
         #nav1 {
             width: 100%;
             height: 70px;
-            border: 2px solid red;
+            /* border: 2px solid red; */
             font-size: 12px;
             background-color: #12823b;
             font-weight: 400;
@@ -35,7 +35,7 @@
 
 
         .nav2 {
-            border: 2px solid red;
+            /* border: 2px solid red; */
             height: 90px;
             padding-right: 30px;
             display: flex;
@@ -47,12 +47,40 @@
             margin: 30px 0px 20px 125px;
             text-align: center;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border: none;
 
         }
 
         .nav2 a {
             margin: 10px 80px;
             margin: auto;
+        }
+
+        #logo {
+            display: grid;
+            /* border: 1px solid red; */
+            align-items: center;
+            row-gap: 0px;
+            padding: 20px;
+        }
+
+        #left {
+            display: flex;
+            gap: 10px;
+        }
+
+        #shop {
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            margin-left: 100px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        #shop a {
+            color: #000;
+            text-decoration: none;
         }
 
 
@@ -81,7 +109,7 @@
         #top-sec>div {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
-            border: 2px solid red;
+            /* border: 2px solid red; */
         }
 
         #top-sec a {
@@ -114,7 +142,7 @@
         #top-sec2>div {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
-            border: 2px solid red;
+            /* border: 2px solid red; */
         }
 
         #top-sec2 a {
@@ -274,7 +302,7 @@
 
         #hidden {
             width: 83%;
-            border: 2px solid red;
+            /* border: 2px solid red; */
             margin: auto;
         }
 
@@ -322,7 +350,7 @@
             text-decoration: underline;
         }
 
-        
+
 
         #flowers {
             margin: auto;
@@ -453,9 +481,102 @@
             display: flex;
             font-weight: 400;
             border-bottom: 1px solid rgb(174, 166, 166);
+        }
 
+        .button {
+            color: green;
+            text-decoration: none;
+            transition: 0.4s;
+        }
 
+        .popup {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0, 0.6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            top: 0%;
+            /* border: 2px solid red; */
+        }
 
+        .popup-content {
+            height: 550px;
+            width: 350px;
+            background-color: white;
+            align-items: center;
+            border-radius: 1%;
+            margin: auto;
+            /* top: 2%; */
+            /* right: 2%; */
+            position: relative;
+            justify-content: center;
+
+        }
+
+        .popup-content h4 {
+            text-align: left;
+            color: #12823b;
+            background-color: rgba(144, 238, 144, 0.974);
+            padding: 10px 0 10px 4px;
+            font-size: 18px;
+            font-weight: 700px;
+            font-family: 'Spartan', 'Helvetica Neue', 'Arial', sans-serif;
+        }
+
+        .popup-content p {
+            color: #12823b;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        input {
+            margin: 50px;
+            display: block;
+            width: 50%;
+            padding: 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            border: none;
+            border-radius: 2%;
+        }
+
+        #log {
+            display: block;
+            justify-content: center;
+            padding: 8px 10px 8px 10px;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: Nunito, sans-serif;
+            background-color: #1e62c1;
+            border: none;
+            /* border-radius: 2%; */
+            color: #f2f3f3;
+            align-items: center;
+            margin: auto;
+            border-radius: 3%;
+        }
+
+        #log:hover {
+            cursor: pointer;
+            background-color: #095ed4;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        #img1 {
+            width: 9%;
+            margin-left: 92%;
+            border-radius: 50%;
+            position: absolute;
+            top: -4px;
+            background-color: #f2f3f3;
+            cursor: pointer;
+        }
+
+        .popup-content h3 {
+            color: #12823b;
+            font-size: 14px;
+            margin-left: 20px;
         }
     </style>
 </head>
@@ -494,15 +615,22 @@
 
         <input type="text" placeholder="Search PerfectParcel.com">
 
-        <a href="shop">Shop</a>
+        <div id="shop">
+            <a href="C:\Users\saksh\OneDrive\Desktop\Perfect-Parcel\Product Page.html">Shop</a>
 
-        <a><img src="https://www.dollartree.com/file/general/dt_plus_pdp_plp_200x70.png" alt="error" height="28px"></a>
+            <img src="https://www.dollartree.com/file/general/dt_plus_pdp_plp_200x70.png" alt="error" height="28px">
+        </div>
+        <div id="left">
+            <div id="logo">
+                <a><img src="https://www.dollartree.com/file/general/DT-icon-account-green.svg" alt=""></a>
+                <div id="login"><a href="#"> Account</a></div>
+            </div>
 
-        <a><img src="https://www.dollartree.com/file/general/DT-icon-account-green.svg" alt=""></a>
-        <span>Account</span>
-
-        <a><img src="https://www.dollartree.com/file/general/DT-icon-cart-green.svg" alt=""></a>
-        <span>Cart</span>
+            <div id="logo">
+                <a><img src="https://www.dollartree.com/file/general/DT-icon-cart-green.svg" alt=""></a>
+                <span>Cart</span>
+            </div>
+        </div>
     </div>
 
     <div class="menu">
@@ -720,7 +848,7 @@
         </div>
     </div>
 
-   
+
 
     <div id="flowers">
         <div>
@@ -857,7 +985,54 @@
         </div>
     </div>
 
-    <div></div>
+    <div class="popup">
+        <div class="popup-content">
+            <img id="img1" src="https://img.icons8.com/windows/512/macos-close.png" alt="">
+
+            <div>
+                <h4>Your Account</h4>
+            </div>
+
+            <div>
+                <p>PerfectParcel.com • FamilyDollar.com • Family Dollar App</p>
+            </div>
+
+            <input type="text" placeholder="Email Address" id="email">
+            <input type="password" placeholder="Password" id="password">
+
+            <button id="log">login</button>
+            <p>Don't have a account yet?</p>
+            <p>Sign Up</p>
+        </div>
+    </div>
+
+
+
 </body>
+
+<script>
+    document.getElementById("login").addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "flex";
+    })
+    document.querySelector("#img1").addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "none";
+    })
+
+    document.getElementById("log").addEventListener("click", function () {
+        logbtn()
+    })
+    function logbtn() {
+        let email = document.getElementById("email").value
+        let password = document.getElementById("password").value
+        if (email == "sakshiparmar123@gmail.com" && password == 1234) {
+            alert("login successful")
+        } else {
+            alert("Invalid")
+        }
+    }
+
+
+
+</script>
 
 </html>
