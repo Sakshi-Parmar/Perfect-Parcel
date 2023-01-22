@@ -213,16 +213,7 @@
         <p>Food, Candy & Drinks</p>
     </div>
 
-    <select id="filter">
-        <option value="">Filter By Category</option>
-        <option value="Laptop">Brand</option>
-        <option value="Mobile">Category</option>
-        <option value="Speakers">Discount Percentage</option>
-        <option value="Speakers">Price</option>
-        <option value="Speakers">Rating</option>
 
-
-    </select>
 
     <div id="product-container"></div>
 
@@ -244,22 +235,6 @@
     }
     FetchData()
 
-    let filterBy = document.getElementById("filter")
-    filterBy.addEventListener("change", () => {
-        FetchData()
-    })
-    function FilterData(data) {
-        let filterValue = filterBy.value
-        if (filterValue === "") {
-            DisplayProduct(data)
-        } else {
-            data = data.filter((products) => {
-                return product.category == filterValue
-            })
-            DisplayProduct(data)
-        }
-
-    }
     let Container = document.getElementById("product-container")
     function DisplayProduct(data) {
         console.log(data)
